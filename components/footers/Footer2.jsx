@@ -6,6 +6,8 @@ import Link from "next/link";
 import LanguageSelect from "../common/LanguageSelect";
 import CurrencySelect from "../common/CurrencySelect";
 import { aboutLinks, footerLinks, paymentImages } from "@/data/footerLinks";
+import LogoLight from "@/public/images/logo/logo-light.svg";
+
 export default function Footer2({ bgColor = "background-black" }) {
   useEffect(() => {
     const headings = document.querySelectorAll(".footer-heading-moblie");
@@ -65,29 +67,26 @@ export default function Footer2({ bgColor = "background-black" }) {
                 <div className="footer-infor">
                   <div className="footer-logo">
                     <Link href={`/`}>
-                      <Image
+                      <LogoLight
                         alt="image"
-                        src="/images/logo/logo-white.svg"
-                        width={136}
-                        height={21}
+                        src="/images/logo/logo-light.svg"
+                        width={155}
+                        height={75}
                       />
                     </Link>
                   </div>
                   <ul>
                     <li>
+                      <p>Address: 563 omar zafan, zamalek.</p>
+                    </li>
+                    <li>
                       <p>
-                        Address: 1234 Fashion Street, Suite 567, <br />
-                        New York, NY 10001
+                        Email: <a href="#"> woodenizer@gmail.com</a>
                       </p>
                     </li>
                     <li>
                       <p>
-                        Email: <a href="#">info@fashionshop.com</a>
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Phone: <a href="#">(212) 555-1234</a>
+                        Phone: <a href="#"> +20 1266788654</a>
                       </p>
                     </li>
                   </ul>
@@ -141,10 +140,10 @@ export default function Footer2({ bgColor = "background-black" }) {
               </div>
               <div className="col-xl-3 col-md-6 col-12 footer-col-block">
                 <div className="footer-heading footer-heading-desktop">
-                  <h6>Help</h6>
+                  <h6>Products</h6>
                 </div>
                 <div className="footer-heading footer-heading-moblie">
-                  <h6>Help</h6>
+                  <h6>Products</h6>
                 </div>
                 <ul className="footer-menu-list tf-collapse-content">
                   {footerLinks.map((link, index) => (
@@ -158,13 +157,13 @@ export default function Footer2({ bgColor = "background-black" }) {
               </div>
               <div className="col-xl-3 col-md-6 col-12 footer-col-block">
                 <div className="footer-heading footer-heading-desktop">
-                  <h6>About us</h6>
+                  <h6>Links</h6>
                 </div>
                 <div className="footer-heading footer-heading-moblie">
-                  <h6>About us</h6>
+                  <h6>Links</h6>
                 </div>
                 <ul className="footer-menu-list tf-collapse-content">
-                  {aboutLinks.slice(0, 4).map((link, index) => (
+                  {aboutLinks.slice(0, 6).map((link, index) => (
                     <li key={index}>
                       <Link href={link.href} className="footer-menu_item">
                         {link.text}
@@ -257,12 +256,11 @@ export default function Footer2({ bgColor = "background-black" }) {
           <div className="container">
             <div className="row">
               <div className="col-12">
-                <div className="footer-bottom-wrap d-flex gap-20 flex-wrap justify-content-between align-items-center">
+                <div className="footer-bottom-wrap d-flex gap-20 flex-wrap justify-content-center align-items-center">
                   <div className="footer-menu_item">
-                    © {new Date().getFullYear()} Ecomus Store. All Rights
-                    Reserved
+                    © {new Date().getFullYear()} Woodenizr. All Rights Reserved
                   </div>
-                  <div className="tf-payment">
+                  {/* <div className="tf-payment">
                     {paymentImages.map((image, index) => (
                       <Image
                         key={index}
@@ -272,7 +270,7 @@ export default function Footer2({ bgColor = "background-black" }) {
                         alt={image.alt}
                       />
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

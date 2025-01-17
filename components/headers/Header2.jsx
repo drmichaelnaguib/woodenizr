@@ -1,9 +1,14 @@
+"use client";
 import React from "react";
 import Nav from "./Nav";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import CartLength from "../common/CartLength";
 import WishlistLength from "../common/WishlistLength";
+import LogoDark from "@/public/images/logo/logo-dark.svg";
+import { headerListItems } from "@/constants/header-items.js";
+import { usePathname } from "next/navigation";
+
 export default function Header2({
   textClass,
   bgColor = "",
@@ -11,6 +16,7 @@ export default function Header2({
   isArrow = true,
   Linkfs = "",
 }) {
+  const pathName = usePathname("/");
   return (
     <header
       id="header"
@@ -40,30 +46,36 @@ export default function Header2({
           </div>
           <div className="col-xl-3 col-md-4 col-6">
             <Link href={`/`} className="logo-header">
-              <Image
-                alt="logo"
-                className="logo"
-                src="/images/logo/logo.svg"
-                width="136"
-                height="21"
-              />
+              <LogoDark width={155} height={75} />
             </Link>
           </div>
           <div className="col-xl-6 tf-md-hidden">
             <nav className="box-navigation text-center">
               <ul className="box-nav-ul d-flex align-items-center justify-content-center gap-30">
+                {headerListItems.map((listItem) => {
+                  return (
+                    <li
+                      key={listItem.path}
+                      className={
+                        pathName === listItem.path
+                          ? `menu-item active`
+                          : `menu-item `
+                      }
+                    >
+                      <Link
+                        href={listItem.path}
+                        className={`item-link ${Linkfs}`}
+                      >
+                        {listItem.name}
+                      </Link>
+                    </li>
+                  );
+                })}
                 <Nav isArrow={isArrow} Linkfs={Linkfs} />
-                <li className={`menu-item`}>
-                  <a
-                    href="https://themeforest.net/item/ecomus-ultimate-html5-template/53417990?s_rank=3"
-                    className={`item-link  ${Linkfs}`}
-                  >
-                    Buy now
-                  </a>
-                </li>
               </ul>
             </nav>
           </div>
+
           <div className="col-xl-3 col-md-4 col-3">
             <ul className="nav-icon d-flex justify-content-end align-items-center gap-20">
               <li className="nav-search">

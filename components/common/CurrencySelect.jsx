@@ -10,6 +10,11 @@ const optionsData = [
     text: "EUR € | France",
   },
   {
+    value: "eg",
+    thumbnail: "/images/country/eg.svg",
+    text: "EGP ج.م | Egypt",
+  },
+  {
     value: "de",
     thumbnail: "/images/country/de.svg",
     text: "EUR € | Germany",

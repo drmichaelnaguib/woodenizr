@@ -1,26 +1,15 @@
-import Features from "@/components/common/Features";
-import ShopGram from "@/components/common/ShopGram";
-import Testimonials from "@/components/common/Testimonials";
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
-import Topbar1 from "@/components/headers/Topbar1";
-import Brands from "@/components/homes/home-1/Brands";
-
-import Categories from "@/components/homes/home-1/Categories";
-
-import Hero from "@/components/homes/home-1/Hero";
-import Lookbook from "@/components/homes/home-1/Lookbook";
-import Marquee from "@/components/homes/home-1/Marquee";
-import Products from "@/components/homes/home-1/Products";
+import Footer2 from "@/components/footers/Footer2";
+import Header2 from "@/components/headers/Header2";
+import Topbar2 from "@/components/headers/Topbar2";
 
 export const metadata = {
-  title: "Home 1 || Ecomus - Ultimate Nextjs Ecommerce Template",
-  description: "Ecomus - Ultimate Nextjs Ecommerce Template",
+  title: "Woodenizr || Wood and more..",
+  description: "Woodenizr-Wood and more delivered to your door",
 };
 export default function Home() {
   return (
     <>
-      <Topbar1 />
+      {/* <Topbar1 />
       <Header1 />
       <Hero />
       <Marquee />
@@ -31,7 +20,10 @@ export default function Home() {
       <Brands />
       <ShopGram />
       <Features />
-      <Footer1 />
+      <Footer1 /> */}
+      <Topbar2 />
+      <Header2 />
+      <Footer2 />
     </>
   );
 }
