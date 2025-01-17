@@ -4,8 +4,8 @@ export const footerLinks = [
   { href: "/hand-tools", text: "Hand Tools" },
   { href: "/shipping-delivery", text: "Shipping" },
   { href: "/delivery-return", text: "Returns + Exchanges" },
-  { href: "/compare", text: "Compare" },
-  { href: "/wishlist", text: "My Wishlist" },
+  // { href: "/compare", text: "Compare" },
+  // { href: "/wishlist", text: "My Wishlist" },
 ];
 export const aboutLinks = [
   // { href: "/about-us", text: "Our Story" },

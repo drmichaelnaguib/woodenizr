@@ -5,6 +5,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import Image from "next/image";
+import { slides } from "@/data/heroslides";
 export default function Hero() {
   return (
     <div className="tf-slideshow slider-effect-fade slider-skincare position-relative">
@@ -20,17 +21,19 @@ export default function Hero() {
         modules={[Autoplay, Pagination]}
         pagination={{ clickable: true, el: ".spd169" }}
       >
-        {slides7.map((slide, index) => (
+        {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="wrap-slider">
-              <Image
-                alt="fashion-slideshow"
-                src={slide.src}
-                width={1920}
-                height={817}
-                priority
-              />
-              <div className="box-content">
+            <div className="wrap-slider d-grid">
+              <div className="box-content col-2">
+                <Image
+                  alt="fashion-slideshow"
+                  src={slide.src}
+                  width={990}
+                  height={450}
+                  priority
+                />
+              </div>
+              <div className="box-content col-1">
                 <div className="container">
                   <h1
                     className={`fade-item fade-item-1 text-white`}
