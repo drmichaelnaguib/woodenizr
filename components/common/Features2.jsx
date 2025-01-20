@@ -4,10 +4,10 @@ import { iconBoxes3 } from "@/data/features";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function Features({ bgColor = "bg_grey-7", titleFont = "" }) {
+export default function Features({ titleFont = "" }) {
   return (
     <section
-      className={`flat-spacing-1 flat-iconbox  wow fadeInUp ${bgColor}`}
+      className={`flat-spacing-1 flat-iconbox  wow fadeInUp bg-white`}
       data-wow-delay="0s"
     >
       <div className="container">
@@ -25,13 +25,15 @@ export default function Features({ bgColor = "bg_grey-7", titleFont = "" }) {
             pagination={{ clickable: true, el: ".spd104" }}
           >
             {iconBoxes3.map((box, index) => (
-              <SwiperSlide key={index}>
-                <div className="tf-icon-box style-row">
+              <SwiperSlide key={index} className="bg_white">
+                <div className="tf-icon-box style-row bg_white ">
                   <div className="icon bg_white">
                     <i className={box.iconClass} />
                   </div>
                   <div className="content">
-                    <div className={`title fw-4 ${titleFont}`}>{box.title}</div>
+                    <div className={`title fw-700 fs-16 ${titleFont}`}>
+                      {box.title}
+                    </div>
                     <p>{box.description}</p>
                   </div>
                 </div>

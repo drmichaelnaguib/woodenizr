@@ -1,25 +1,27 @@
 "use client";
 import { galleryImages } from "@/data/gallery";
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { Pagination } from "swiper/modules";
+import Link from "next/link";
 export default function ShopGram() {
   return (
     <section className="flat-spacing-1">
       <div className="container">
         <div className="flat-title">
-          <span className="title">Shop Gram</span>
-          <p className="sub-title">
+          <span className="title">Shop by category</span>
+          {/* <p className="sub-title">
             Inspire and let yourself be inspired, from one unique fashion to
             another.
-          </p>
+          </p> */}
         </div>
         <div className="wrap-shop-gram">
           <Swiper
             dir="ltr"
             spaceBetween={7} // Corresponds to data-space-lg and data-space-md
-            slidesPerView={5} // Corresponds to data-preview
+            slidesPerView={4} // Corresponds to data-preview
             breakpoints={{
               1200: { slidesPerView: 5 }, // Corresponds to data-tablet
               1000: { slidesPerView: 4 }, // Corresponds to data-tablet
@@ -43,6 +45,9 @@ export default function ShopGram() {
                       className="lazyload img-hover"
                     />
                   </div>
+                </div>
+                <div className="gallery-item d-flex flex-direction-column justify-content-center">
+                  <Link className="fc-black fw-400 fs-18">{image.title}</Link>;
                 </div>
               </SwiperSlide>
             ))}

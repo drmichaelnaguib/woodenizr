@@ -1,37 +1,57 @@
-.wrap-slider {
-  position: relative;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .box-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    .heading,
-    h1 {
-      margin-bottom: 18px;
-      &.mb_38 {
-        margin-bottom: 38px;
+.swiper-slide {
+  padding: 137.5px 75px;
+  background-color: #f3f3f3;
+  .wrap-slider {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 1px solid transparent;
+      &:hover {
+        border-color: blue;
       }
     }
-    p {
-      margin-bottom: 48px;
-      font-size: 20px;
-      line-height: 24px;
-      &.mb_15 {
-        margin-bottom: 15px;
-      }
-      &.sale_off {
-        background-color: #ff5c39;
-        padding: 5px 20px;
-        width: max-content;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 14px;
+    .box-content {
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 215px;
+      width: 630px;
+      padding: 150px 75px;
+      .container {
+        height: 82px;
+        width: 550px;
+
+        .heading,
+        h1 {
+          line-height: 81.6px;
+          font-size: 40px;
+          font-weight: 500;
+          margin-bottom: 18px;
+          &.mb_38 {
+            margin-bottom: 38px;
+          }
+        }
+        p {
+          margin-bottom: 48px;
+          font-size: 20px;
+          line-height: 24px;
+          &.mb_15 {
+            margin-bottom: 15px;
+          }
+          &.sale_off {
+            background-color: #ff5c39;
+            padding: 5px 20px;
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 14px;
+          }
+        }
       }
     }
   }
@@ -46,6 +66,7 @@
     right: 0;
   }
   .sw-absolute-3 {
+    background-color: #f3f3f3;
     right: 3%;
     left: unset;
     width: auto;
@@ -69,6 +90,7 @@
   }
 }
 .slider-skincare {
+  background-color: #f3f3f3;
   .sw-absolute-3 {
     top: 50%;
     transform: translateY(-50%);
@@ -301,6 +323,7 @@
 
 .autoplay-linear {
   .swiper-wrapper {
+    background-color: #f3f3f3;
     transition-timing-function: linear;
   }
 }

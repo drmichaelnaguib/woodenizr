@@ -38,14 +38,14 @@ export default function Hero() {
                     <p className="fade-item fade-item-1 text-white subheading fw-7">
                       {slide.subheading}
                     </p>
-                    <h3 className="fade-item fade-item-2 text-white heading">
+                    {/* <h3 className="fade-item fade-item-2 text-white heading">
                       {slide.heading.split("\n").map((line, idx) => (
                         <React.Fragment key={idx}>
                           {line}
                           <br />
                         </React.Fragment>
                       ))}
-                    </h3>
+                    </h3> */}
                     <div className="fade-item fade-item-3">
                       <Link
                         href={`/shop-collection-list`}

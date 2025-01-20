@@ -8,7 +8,7 @@ import { Navigation, Pagination } from "swiper/modules";
 export default function Products() {
   return (
     <section className="flat-spacing-1 pt_0">
-      <div className="container">
+      <div className="container pt-5 ">
         <div className="flat-title">
           <span className="title">People Also Bought</span>
         </div>
@@ -38,7 +38,7 @@ export default function Products() {
             pagination={{ clickable: true, el: ".spd307" }}
           >
             {products1.slice(0, 8).map((product, i) => (
-              <SwiperSlide key={i} className="swiper-slide">
+              <SwiperSlide key={i} className="swiper-slide bg-white">
                 <ProductCard product={product} />
               </SwiperSlide>
             ))}

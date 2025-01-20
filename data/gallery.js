@@ -1,39 +1,58 @@
 export const galleryImages = [
   {
-    imgSrc: "/images/shop/gallery/gallery-7.jpg",
+    imgSrc: "/images/shop/category/shop-gram-wood-care.svg",
     alt: "image-gallery",
     width: 400,
     height: 400,
+    title: "Wood Care",
   },
   {
-    imgSrc: "/images/shop/gallery/gallery-3.jpg",
+    imgSrc: "/images/shop/category/shop-gram-natural-wood.svg",
     alt: "image-gallery",
     width: 400,
     height: 400,
+    title: "Natural Wood",
   },
   {
-    imgSrc: "/images/shop/gallery/gallery-5.jpg",
+    imgSrc: "/images/shop/category/shop-gram-special-paints.svg",
     alt: "image-gallery",
     width: 400,
     height: 401,
+    title: "Special Paints",
   },
   {
-    imgSrc: "/images/shop/gallery/gallery-8.jpg",
+    imgSrc: "/images/shop/category/shop-gram-protective-equipment.svg",
     alt: "image-gallery",
     width: 400,
     height: 400,
+    title: "Personal Protective Equipment",
+  },
+  // {
+  //   imgSrc: "/images/shop/gallery/gallery-6.jpg",
+  //   alt: "image-gallery",
+  //   width: 400,
+  //   height: 400,
+  // },
+  // {
+  //   imgSrc: "/images/shop/gallery/gallery-5.jpg",
+  //   alt: "image-gallery",
+  //   width: 400,
+  //   height: 401,
+  // },
+];
+
+export const galleryImageTitles = [
+  {
+    title: "Wood Care",
   },
   {
-    imgSrc: "/images/shop/gallery/gallery-6.jpg",
-    alt: "image-gallery",
-    width: 400,
-    height: 400,
+    title: "Natural Wood",
   },
   {
-    imgSrc: "/images/shop/gallery/gallery-5.jpg",
-    alt: "image-gallery",
-    width: 400,
-    height: 401,
+    title: "Special Paints",
+  },
+  {
+    title: "Personal Protective Equipment",
   },
 ];
 

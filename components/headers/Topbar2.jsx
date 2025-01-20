@@ -12,8 +12,8 @@ export default function Topbar2({ bgColor = "bg_dark" }) {
         <div className="tf-top-bar_wrap grid-2 gap-30 align-items-center">
           <div className="tf-top-bar_left">
             <div className="d-flex gap-30 text_white fw-5">
-              <span>(+333) 123-1688</span>
-              <span>sayhello@ecomus.com</span>
+              <span>+20 1266788654</span>
+              <span>woodenizer@gmail.com</span>
             </div>
           </div>
 
