@@ -20,7 +20,7 @@ export default function ShopGram() {
         <div className="wrap-shop-gram">
           <Swiper
             dir="ltr"
-            spaceBetween={7} // Corresponds to data-space-lg and data-space-md
+            spaceBetween={30} // Corresponds to data-space-lg and data-space-md
             slidesPerView={4} // Corresponds to data-preview
             breakpoints={{
               1200: { slidesPerView: 5 }, // Corresponds to data-tablet
@@ -35,7 +35,7 @@ export default function ShopGram() {
           >
             {galleryImages.map((image, index) => (
               <SwiperSlide key={index}>
-                <div className="gallery-item hover-img">
+                <div className="gallery-item hover-img mb-5">
                   <div className="img-style">
                     <Image
                       src={image.imgSrc}
@@ -46,8 +46,10 @@ export default function ShopGram() {
                     />
                   </div>
                 </div>
-                <div className="gallery-item d-flex flex-direction-column justify-content-center">
-                  <Link className="fc-black fw-400 fs-18">{image.title}</Link>;
+                <div className="gallery-item d-flex flex-row  justify-content-center">
+                  <Link href={"#"} className="fc-black fs-14">
+                    {image.title}
+                  </Link>
                 </div>
               </SwiperSlide>
             ))}

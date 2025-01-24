@@ -8,11 +8,12 @@ import { Navigation, Pagination } from "swiper/modules";
 export default function Products() {
   return (
     <section className="flat-spacing-1 pt_0">
-      <div className="container pt-5 ">
-        <div className="flat-title">
+      <div className="container pt-5">
+        <div className="flat-title  mb-0">
           <span className="title">People Also Bought</span>
         </div>
-        <div className="hover-sw-nav hover-sw-2">
+
+        <div className="hover-sw-nav hover-sw-2 mt-0">
           <Swiper
             dir="ltr"
             className="swiper tf-sw-product-sell wrap-sw-over"
