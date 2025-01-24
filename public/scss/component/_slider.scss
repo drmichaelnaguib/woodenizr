@@ -1,6 +1,6 @@
 .swiper-slide {
   padding: 137.5px 75px;
-  background-color: #f3f3f3;
+  background-color: #e4cfaf;
   .wrap-slider {
     position: relative;
     display: grid;
@@ -11,7 +11,7 @@
       object-fit: cover;
       border: 1px solid transparent;
       &:hover {
-        border-color: blue;
+        border-color: rgb(109, 56, 6);
       }
     }
     .box-content {
@@ -90,7 +90,6 @@
   }
 }
 .slider-skincare {
-  background-color: #f3f3f3;
   .sw-absolute-3 {
     top: 50%;
     transform: translateY(-50%);

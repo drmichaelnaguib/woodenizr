@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function Testimonials() {
   return (
     <section
-      className="flat-spacing-5 pt_0 flat-testimonial "
+      className="flat-spacing-5 pt_0 flat-testimonial p-5"
       style={{ maxWidth: "100vw", overflow: "hidden" }}
     >
       <div className="container pt-5 bg- #f3f3f3">
