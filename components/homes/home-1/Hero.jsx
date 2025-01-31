@@ -45,7 +45,7 @@ export default function Hero() {
                       <p className="fade-item fade-item-2">{slide.text}</p>
                       <Link
                         href={`/shop-default`}
-                        className="fade-item fade-item-3 tf-btn btn-fill animate-hover-btn btn-xl radius-3"
+                        className="fade-item fade-item-3  btn-fill animate-hover-btn btn-xl radius-3"
                       >
                         <span>{slide.btnText}</span>
                         <i className="icon icon-arrow-right" />

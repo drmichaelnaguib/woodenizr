@@ -43,7 +43,7 @@
   }
   &.btn-primary-main {
     background-color: var(--primary);
-    color: var(--main);
+    color: var(--white);
   }
   &.style-2 {
     padding: 0 24px;
@@ -55,19 +55,19 @@
   }
   &.btn-color-1 {
     background-color: #fcf151;
-    border-color: var(--main);
+    border-color: var(--white);
   }
   &.btn-color-2 {
     background-color: #c7fcff;
-    border-color: var(--main);
+    border-color: var(--white);
   }
   &.btn-color-3 {
     background-color: #ffb1d2;
-    border-color: var(--main);
+    border-color: var(--white);
   }
   &.btn-color-4 {
     background-color: #c1fb9b;
-    border-color: var(--main);
+    border-color: var(--white);
   }
   &.btn-color-5 {
     background-color: #e09314;
@@ -106,12 +106,12 @@
 
 .btn-fill {
   background-color: var(--bg-5);
-  border: 1px solid var(--main);
+  border: 1px solid var(transparent);
   color: var(--white);
 }
 .btn-outline {
   background-color: var(--white);
-  border: 1px solid var(--main);
+  border: 1px solid var(--white);
 }
 .btn-outline-2 {
   background-color: var(--white);
@@ -145,7 +145,7 @@
   border: 1px solid var(--white);
   color: var(--white);
   &:hover {
-    color: var(--main);
+    color: var(--white);
     border-color: var(--white);
     background-color: var(--white);
   }
@@ -154,7 +154,7 @@
 .btn-line {
   padding: 0;
   padding-bottom: 7px;
-  color: var(--main);
+  color: var(--white);
   position: relative;
   .icon {
     margin-inline-start: 8px;
@@ -168,7 +168,7 @@
     bottom: 0;
     right: 0;
     height: 1px;
-    background-color: var(--main);
+    background-color: var(--white);
     @include transition3;
   }
   &:hover {
@@ -194,15 +194,15 @@
     color: var(--white);
   }
   &:hover {
-    background-color: var(--main);
+    background-color: var(--white);
     color: var(--white);
   }
 }
 .btn-light-icon {
-  background-color: var(--bg-5);
+  background-color: var(--white);
 }
 .btn-fill-line {
-  border: 1px solid var(--main) !important;
+  border: 1px solid var(transparent) !important;
   &:hover {
     border-color: transparent !important;
   }
@@ -216,7 +216,7 @@
   background-image: linear-gradient(
     90deg,
     transparent,
-    rgb(0 0 0 /0.25),
+    var(--white),
     transparent
   );
   content: "";
@@ -249,10 +249,10 @@
   position: relative;
   @include transition3;
   &.loading {
-    background-color: var(--main);
+    background-color: var(--white);
     .icon,
     i {
-      // color: var(--white);
+      color: var(--white);
       display: none;
     }
     &::before {
@@ -283,14 +283,14 @@
   width: auto;
   height: 42px;
   min-width: 118px;
-  border: 1px solid var(--line);
+  border: 1px solid var(transparent);
   background-color: var(--white);
   border-radius: 3px;
 
   &.loading {
     background-color: var(--white);
     &::before {
-      border-color: var(--main);
+      border-color: var(--white);
     }
     .text {
       display: none;
@@ -298,13 +298,13 @@
   }
   .text {
     font-size: 14px;
-    color: var(--main);
+    color: var(--white);
     font-weight: 400;
     @include transition3;
   }
   &.style-2 {
     height: 38px;
-    border-color: var(--main);
+    border-color: var(transparent);
     .text {
       font-weight: 600;
     }
@@ -339,8 +339,8 @@
   align-items: center;
   cursor: pointer;
   gap: 10px;
-  color: var(--main);
-  border: solid 1px var(--line-2);
+  color: var(--white);
+  border: solid 1px var(transparent);
   border-radius: 3px;
   text-transform: uppercase;
   line-height: 22px;

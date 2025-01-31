@@ -1,7 +1,6 @@
 "use client";
 
 import { iconBoxes3 } from "@/data/features";
-import { $currentBackground } from "@google/model-viewer/lib/features/environment";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,7 +10,7 @@ export default function Features({ titleFont = "" }) {
       className={`flat-spacing-1 flat-iconbox  wow fadeInUp`}
       data-wow-delay="0s"
     >
-      <div className="container">
+      <div className="container ">
         <div className="wrap-carousel wrap-mobile">
           <Swiper
             dir="ltr"
