@@ -8,8 +8,8 @@ import { Navigation, Pagination } from "swiper/modules";
 export default function Products() {
   return (
     <section className="flat-spacing-1 pt_0">
-      <div className="container pt-5">
-        <div className="flat-title  mb-0">
+      <div className="container pt-5 ">
+        <div className="flat-title  mb-5">
           <span className="title">People Also Bought</span>
         </div>
 
@@ -18,7 +18,7 @@ export default function Products() {
             dir="ltr"
             className="swiper tf-sw-product-sell wrap-sw-over"
             slidesPerView={4} // Equivalent to data-preview={4}
-            spaceBetween={30} // Equivalent to data-space-lg={30}
+            spaceBetween={100} // Equivalent to data-space-lg={30}
             breakpoints={{
               1024: {
                 slidesPerView: 4, // Equivalent to data-tablet={3}

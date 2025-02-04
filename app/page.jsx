@@ -26,7 +26,7 @@ export default function Home() {
       <Hero />
       {/* <Brands /> */}
       {/* <Categories /> */}
-
+      <Products />
       <ShopGram />
       {/* <Hero6 /> */}
       <Products />

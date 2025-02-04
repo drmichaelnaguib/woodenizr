@@ -1,10 +1,23 @@
 .swiper-slide {
-  padding: 137.5px 75px;
-  background-color: #e4cfaf;
+  background-color: var(--white);
+  height: 700px;
+  width: 100%;
+  position: relative;
+  :not(.swiper-slide-cover) {
+    left: 100;
+  }
+  .swiper-slide-cover {
+    width: 100%;
+    height: 100%;
+  }
   .wrap-slider {
-    position: relative;
+    position: absolute;
     display: grid;
     grid-template-columns: auto auto;
+    left: 20;
+    top: 50%;
+    transform: translateY(-50%);
+
     img {
       width: 100%;
       height: 100%;
@@ -15,13 +28,13 @@
       }
     }
     .box-content {
-      left: 0;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
       height: 215px;
       width: 630px;
       padding: 150px 75px;
+      left: 10;
+      top: 50%;
+      transform: translateY(-50%);
+
       .container {
         height: 82px;
         width: 550px;
@@ -331,7 +344,7 @@
 
   .tf-sw-slideshow {
     padding-top: 60px;
-    margin-top: -60px;
+    // margin-top: -60px;
   }
   .wrap-slider {
     position: relative;

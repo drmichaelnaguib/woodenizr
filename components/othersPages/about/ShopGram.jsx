@@ -17,7 +17,7 @@ export default function ShopGram() {
             another.
           </p> */}
         </div>
-        <div className="wrap-shop-gram">
+        <div className="wrap-shop-gram ">
           <Swiper
             dir="ltr"
             spaceBetween={30} // Corresponds to data-space-lg and data-space-md
