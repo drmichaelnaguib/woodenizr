@@ -14,7 +14,7 @@ export default function Hero() {
         centeredSlides={false}
         spaceBetween={0}
         loop={true}
-        // autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 2000 }}
         speed={1000}
         modules={[Autoplay, Pagination]}
         pagination={{ clickable: true, el: ".spd125" }}

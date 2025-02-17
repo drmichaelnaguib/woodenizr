@@ -8,16 +8,20 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="tf-slideshow slider-effect-fade position-relative">
+    <div
+      className="tf-slideshow slider-effect-fade position-relative"
+      id="home_banner_section"
+    >
       <Swiper
         dir="ltr"
         className="swiper tf-sw-slideshow"
+        id="swiper"
         modules={[Pagination]}
         pagination={{ clickable: true, el: ".sp1" }}
         speed={1000}
       >
         {slides.map((slide, index) => (
-          <SwiperSlide className="swiper-slide" key={index}>
+          <SwiperSlide className="swiper-slide" id="swiper-slide" key={index}>
             <div className="wrap-slider">
               <div className="row">
                 <div className="col-6">

@@ -1,15 +1,15 @@
 "use client";
 import { galleryImages } from "@/data/gallery";
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { Pagination } from "swiper/modules";
 import Link from "next/link";
+
 export default function ShopGram() {
   return (
-    <section className="flat-spacing-1">
-      <div className="container">
+    <section className="flat-spacing-1" id="product-category-section">
+      <div className="container" id="swiper-wrapper">
         <div className="flat-title">
           <span className="title">Shop by category</span>
           {/* <p className="sub-title">
@@ -19,12 +19,13 @@ export default function ShopGram() {
         </div>
         <div className="wrap-shop-gram ">
           <Swiper
+            id="swiper"
             dir="ltr"
             spaceBetween={30} // Corresponds to data-space-lg and data-space-md
             slidesPerView={4} // Corresponds to data-preview
             breakpoints={{
               1200: { slidesPerView: 5 }, // Corresponds to data-tablet
-              1000: { slidesPerView: 4 }, // Corresponds to data-tablet
+              1000: { slidesPerView: 5 }, // Corresponds to data-tablet
               768: { slidesPerView: 3 }, // Corresponds to data-tablet
               640: { slidesPerView: 2 }, // Corresponds to data-mobile
               0: { slidesPerView: 2 }, // Corresponds to data-mobile
@@ -34,7 +35,7 @@ export default function ShopGram() {
             pagination={{ clickable: true, el: ".spd304" }}
           >
             {galleryImages.map((image, index) => (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index} id="swiper-slide">
                 <div className="gallery-item hover-img mb-5">
                   <div className="img-style">
                     <Image

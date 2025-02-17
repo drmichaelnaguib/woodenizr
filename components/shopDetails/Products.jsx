@@ -7,7 +7,10 @@ import { Navigation, Pagination } from "swiper/modules";
 
 export default function Products() {
   return (
-    <section className="flat-spacing-1 pt_0">
+    <section
+      className="flat-spacing-1 pt_0"
+      id="home_featured_products_section"
+    >
       <div className="container pt-5 ">
         <div className="flat-title  mb-5">
           <span className="title">People Also Bought</span>

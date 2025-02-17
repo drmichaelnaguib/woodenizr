@@ -564,3 +564,10 @@
     right: 6%;
   }
 }
+
+#category_shopping {
+  .swiper-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
