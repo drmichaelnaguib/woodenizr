@@ -1,6 +1,6 @@
 .swiper-slide {
-  background-color: var(--white);
-  height: 700px;
+  // background-color: var(--white);
+  // height: 700px;
   width: 100%;
   position: relative;
   :not(.swiper-slide-cover) {
@@ -174,7 +174,7 @@
     top: 0;
     bottom: 0;
     display: flex;
-    background-color: rgb(238, 241, 224);
+    // background-color: rgb(238, 241, 224);
     .box-content {
       position: unset;
       transform: unset;
@@ -411,7 +411,7 @@
     transform: translateY(-50%);
   }
   .card-box {
-    background-color: var(--white);
+    // background-color: var(--white);
     border-radius: 10px;
     padding: 20px 15px;
     .subheading {

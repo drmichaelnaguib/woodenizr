@@ -7,7 +7,10 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="tf-slideshow slider-effect-fade slider-home-5 position-relative h-900">
+    <section
+      className="tf-slideshow slider-effect-fade slider-home-5 position-relative h-900"
+      id="slider-section"
+    >
       <Swiper
         dir="ltr"
         slidesPerView={1}
@@ -18,7 +21,6 @@ export default function Hero() {
         speed={1000}
         modules={[Autoplay, Pagination]}
         pagination={{ clickable: true, el: ".spd125" }}
-        style={{ height: "900px", width: "100%" }}
       >
         {slides7.map((item, index) => (
           <SwiperSlide key={index} className="">

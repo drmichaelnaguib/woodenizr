@@ -15,16 +15,15 @@ export default function Hero() {
       <Swiper
         dir="ltr"
         className="swiper tf-sw-slideshow"
-        id="swiper"
         modules={[Pagination]}
         pagination={{ clickable: true, el: ".sp1" }}
         speed={1000}
       >
         {slides.map((slide, index) => (
-          <SwiperSlide className="swiper-slide" id="swiper-slide" key={index}>
+          <SwiperSlide className="swiper-slide" key={index}>
             <div className="wrap-slider">
               <div className="row">
-                <div className="col-6">
+                <div className="col-12 col-md-6">
                   <div className="wrap-slider-image">
                     <Image
                       priority
@@ -35,26 +34,26 @@ export default function Hero() {
                     />
                   </div>
                 </div>
-                <div className="col-6">
+                <div className="col-12 col-md-6">
                   <div className="box-content">
-                    <div className="container">
-                      <h1 className="fade-item fade-item-1">
-                        {slide.title.split("\n").map((line, i) => (
-                          <React.Fragment key={i}>
-                            {line}
-                            <br />
-                          </React.Fragment>
-                        ))}
-                      </h1>
-                      <p className="fade-item fade-item-2">{slide.text}</p>
-                      <Link
-                        href={`/shop-default`}
-                        className="fade-item fade-item-3  btn-fill animate-hover-btn btn-xl radius-3"
-                      >
-                        <span>{slide.btnText}</span>
-                        <i className="icon icon-arrow-right" />
-                      </Link>
-                    </div>
+                    <h1 className="fade-item fade-item-1 fs-1 text slide-title">
+                      {slide.title.split("\n").map((line, i) => (
+                        <React.Fragment key={i}>
+                          {line}
+                          <br />
+                        </React.Fragment>
+                      ))}
+                    </h1>
+                    <p className="fade-item fade-item-2 slide-text ">
+                      {slide.text}
+                    </p>
+                    <Link
+                      href={`/shop-default`}
+                      className="fade-item fade-item-3 slide-link btn-fill animate-hover-btn btn-xl radius-3"
+                    >
+                      <span>{slide.btnText}</span>
+                      <i className="icon icon-arrow-right" />
+                    </Link>
                   </div>
                 </div>
               </div>

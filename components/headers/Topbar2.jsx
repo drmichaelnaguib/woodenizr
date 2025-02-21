@@ -1,13 +1,11 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import LanguageSelect from "../common/LanguageSelect";
 import CurrencySelect from "../common/CurrencySelect";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+
 export default function Topbar2({ bgColor = "bg_dark" }) {
   return (
-    <div className={`tf-top-bar bg_dark line ${bgColor}`}>
+    <div className={`tf-top-bar bg_dark line ${bgColor}`} id="header__top-bar">
       <div className="px_15 lg-px_40">
         <div className="tf-top-bar_wrap grid-2 gap-30 align-items-center">
           <div className="tf-top-bar_left">
