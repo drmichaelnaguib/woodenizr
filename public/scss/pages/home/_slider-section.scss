@@ -1,0 +1,42 @@
+#slider-section {
+  margin-bottom: 20px;
+  height: auto;
+  .swiper {
+    .swiper-wrapper {
+      .swiper-slide {
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  #slider-section {
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+        }
+        .wrap-slider {
+          transform: none;
+          top: 0%;
+          left: -100px;
+
+          .box-content {
+            display: flex;
+            justify-content: flex-start;
+            .container {
+              height: min-content;
+
+              h1 {
+                font-size: 30px;
+                margin-bottom: 0%;
+              }
+              p {
+                font-size: 18px;
+                margin-bottom: 0%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

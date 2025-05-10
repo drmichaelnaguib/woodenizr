@@ -2,25 +2,24 @@
 import Image from "next/image";
 import { testimonials } from "@/data/testimonials";
 import React from "react";
-import Link from "next/link";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Testimonials() {
   return (
     <section
-      className="flat-spacing-5 pt_0 flat-testimonial"
+      className="flat-spacing-5 pt_0 flat-testimonial "
       style={{ maxWidth: "100vw", overflow: "hidden" }}
     >
       <div className="container">
-        <div className="flat-title wow fadeInUp" data-wow-delay="0s">
+        <div className="flat-title wow fadeInUp mb-0 " data-wow-delay="0s">
           <span className="title">Happy Clients</span>
           <p className="sub-title">Hear what they say about us</p>
         </div>
         <div className="wrap-carousel">
           <Swiper
             dir="ltr"
-            className="swiper tf-sw-testimonial"
+            className="swiper tf-sw-testimonial "
             spaceBetween={30} // Equivalent to data-space-lg
             slidesPerView={3} // Equivalent to data-preview
             breakpoints={{
@@ -45,7 +44,7 @@ export default function Testimonials() {
             pagination={{ clickable: true, el: ".spb3" }}
           >
             {testimonials.map((testimonial, index) => (
-              <SwiperSlide className="swiper-slide" key={index}>
+              <SwiperSlide className="swiper-slide bg-white" key={index}>
                 <div
                   className="testimonial-item style-column wow fadeInUp"
                   data-wow-delay={testimonial.delay}

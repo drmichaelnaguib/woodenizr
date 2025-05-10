@@ -1,20 +1,20 @@
 export const slides = [
   {
-    imgSrc: "/images/slider/fashion-slideshow-01.jpg",
-    title: "Glamorous\nGlam",
-    text: "From casual to formal, we've got you covered",
+    imgSrc: "/images/slider/Hero-swiper-first-slide.svg",
+    title: "We Woodenize Things",
+    text: "Designed for the minimalist, the Rushfaster Desk Mat is free from unnecessary complications",
     btnText: "Shop collection",
   },
   {
-    imgSrc: "/images/slider/fashion-slideshow-02.jpg",
-    title: "Simple\nStyle",
-    text: "From casual to formal, we've got you covered",
+    imgSrc: "/images/slider/Hero-swiper-first-slide.svg",
+    title: "We Woodenize Things",
+    text: "Designed for the minimalist, the Rushfaster Desk Mat is free from unnecessary complications",
     btnText: "Shop collection",
   },
   {
-    imgSrc: "/images/slider/fashion-slideshow-03.jpg",
-    title: "Glamorous\nGlam",
-    text: "From casual to formal, we've got you covered",
+    imgSrc: "/images/slider/Hero-swiper-first-slide.svg",
+    title: "We Woodenize Things",
+    text: "Designed for the minimalist, the Rushfaster Desk Mat is free from unnecessary complications",
     btnText: "Shop collection",
   },
 ];

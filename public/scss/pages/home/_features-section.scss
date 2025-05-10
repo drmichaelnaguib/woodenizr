@@ -1,0 +1,19 @@
+#features-section {
+  background-color: #f5f5f5;
+  padding: 20px 20px;
+  .swiper-wrapper {
+    .wrap-carousel {
+      .swiper {
+        .swiper-slide {
+          background-color: transparent;
+          .swiper-slide-icon {
+            background-color: transparent;
+          }
+          .swiper-slide-content {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+  }
+}

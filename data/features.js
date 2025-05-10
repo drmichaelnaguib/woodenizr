@@ -144,12 +144,6 @@ export const iconBoxes3 = [
     title: "Premium Support",
     description: "Outstanding premium support",
   },
-
-  {
-    iconClass: "icon-return fs-20",
-    title: "14 Day Returns",
-    description: "Within 30 days for an exchange",
-  },
 ];
 
 export const iconBoxSlides = [

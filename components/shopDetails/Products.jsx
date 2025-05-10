@@ -7,17 +7,21 @@ import { Navigation, Pagination } from "swiper/modules";
 
 export default function Products() {
   return (
-    <section className="flat-spacing-1 pt_0">
-      <div className="container">
-        <div className="flat-title">
+    <section
+      className="flat-spacing-1 pt_0"
+      id="home_featured_products_section"
+    >
+      <div className="container pt-5 ">
+        <div className="flat-title  mb-5">
           <span className="title">People Also Bought</span>
         </div>
-        <div className="hover-sw-nav hover-sw-2">
+
+        <div className="hover-sw-nav hover-sw-2 mt-0">
           <Swiper
             dir="ltr"
             className="swiper tf-sw-product-sell wrap-sw-over"
             slidesPerView={4} // Equivalent to data-preview={4}
-            spaceBetween={30} // Equivalent to data-space-lg={30}
+            spaceBetween={100} // Equivalent to data-space-lg={30}
             breakpoints={{
               1024: {
                 slidesPerView: 4, // Equivalent to data-tablet={3}
@@ -38,7 +42,7 @@ export default function Products() {
             pagination={{ clickable: true, el: ".spd307" }}
           >
             {products1.slice(0, 8).map((product, i) => (
-              <SwiperSlide key={i} className="swiper-slide">
+              <SwiperSlide key={i} className="swiper-slide bg-white">
                 <ProductCard product={product} />
               </SwiperSlide>
             ))}

@@ -3,8 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 const languageOptions = [
   { id: "en", label: "English" },
   { id: "ar", label: "العربية" },
-  { id: "zh", label: "简体中文" },
-  { id: "ur", label: "اردو" },
 ];
 
 export default function LanguageSelect({

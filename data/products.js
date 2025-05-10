@@ -1,9 +1,10 @@
 export const products1 = [
   {
     id: 1,
-    imgSrc: "/images/products/orange-1.jpg",
+    imgSrc:
+      "/images/shop/products/spray-paint-355ml-stone-mineral-brown-spray-american-accents-62825.svg",
     imgHoverSrc: "/images/products/white-1.jpg",
-    title: "Ribbed Tank Top",
+    title: "Brown Spray Paint",
     price: 16.95,
     colors: [
       {
@@ -29,9 +30,9 @@ export const products1 = [
   },
   {
     id: 2,
-    imgSrc: "/images/products/brown.jpg",
+    imgSrc: "/images/shop/products/epoxy-resin.svg",
     imgHoverSrc: "/images/products/purple.jpg",
-    title: "Ribbed Modal T-shirt",
+    title: "Parks Super Glaze ",
     price: 18.95,
     colors: [
       {
@@ -58,9 +59,9 @@ export const products1 = [
   },
   {
     id: 3,
-    imgSrc: "/images/products/white-3.jpg",
+    imgSrc: "/images/shop/products/tung-oil-woodcare.svg",
     imgHoverSrc: "/images/products/white-4.jpg",
-    title: "Oversized Printed T-shirt",
+    title: "Watco Tung Oil",
     price: 10.0,
     sizes: ["S", "M", "L", "XL"],
     filterCategories: ["Best seller", "On Sale"],
@@ -69,9 +70,10 @@ export const products1 = [
   },
   {
     id: 4,
-    imgSrc: "/images/products/white-2.jpg",
+    imgSrc:
+      "/images/shop/products/watco-butcher-block-oil-finish-473ml-63560.svg",
     imgHoverSrc: "/images/products/pink-1.jpg",
-    title: "Oversized Printed T-shirt",
+    title: "Watco Butcher Block Oil",
     price: 16.95,
     colors: [
       {

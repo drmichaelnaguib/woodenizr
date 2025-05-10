@@ -208,12 +208,15 @@
       }
     }
     li {
-      &:hover {
+      &:hover,
+      &.active {
         .item-link {
+          color: var(--primary);
           &::before {
             width: 100%;
             left: 0;
             right: auto;
+            background: var(--primary);
           }
         }
       }
@@ -258,7 +261,7 @@
       top: -8px;
       right: -10px;
       color: var(--white);
-      background-color: var(--primary);
+      background-color: var(--main);
     }
   }
   .tf-product-header {

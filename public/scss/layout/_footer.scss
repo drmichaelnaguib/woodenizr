@@ -1,0 +1,20 @@
+@media (max-width: 900px) {
+  #footer {
+    .footer-wrap {
+      .footer-body {
+        .container {
+          .row {
+            .col-xl-3 {
+              .footer-infor {
+                .footer-logo {
+                  display: flex;
+                  justify-content: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

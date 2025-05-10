@@ -45,8 +45,14 @@
 /*------------ Components ---------------- */
 @import "./component/index";
 
+/*------------ Pages ---------------- */
+@import "./pages/index";
+
 /*------------ sections ---------------- */
 @import "./sections";
 
 /*-------------- Responsive ----------------- */
 @import "./responsive";
+
+/*-------------- Layout ----------------- */
+@import "./layout/index.scss";

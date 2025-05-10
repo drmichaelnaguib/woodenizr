@@ -1,12 +1,16 @@
 "use client";
 import Image from "next/image";
-import { slideshowData } from "@/data/heroslides";
+import { slides7 } from "@/data/heroslides";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
+
 export default function Hero() {
   return (
-    <section className="tf-slideshow slider-effect-fade slider-home-5 position-relative">
+    <section
+      className="tf-slideshow slider-effect-fade slider-home-5 position-relative h-900"
+      id="slider-section"
+    >
       <Swiper
         dir="ltr"
         slidesPerView={1}
@@ -18,29 +22,36 @@ export default function Hero() {
         modules={[Autoplay, Pagination]}
         pagination={{ clickable: true, el: ".spd125" }}
       >
-        {slideshowData.map((item, index) => (
-          <SwiperSlide key={index}>
-            <div className="wrap-slider">
-              <Image
-                className="lazyload"
-                data-src={item.imgSrc}
-                alt={item.imgAlt}
-                src={item.imgSrc}
-                width={2000}
-                height={1125}
-                priority
-              />
+        {slides7.map((item, index) => (
+          <SwiperSlide key={index} className="">
+            <Image
+              alt="Woodenizr"
+              src="/images/slider/Hero-swiper-first-slide.svg"
+              width="750"
+              height="450"
+              className="swiper-slide-cover object-fit-cover"
+            />
+            <div className="wrap-slider position-absolute">
+              {/* <Image
+                  className="lazyload"
+                  data-src={item.src}
+                  alt={item.title}
+                  src={item.src}
+                  width={2000}
+                  height={1125}
+                  priority
+                /> */}
               <div className="box-content text-center">
-                <div className="container">
+                <div className="container ">
                   <h1 className="fade-item fade-item-1 text-white heading">
-                    {item.heading}
+                    {item.title}
                   </h1>
                   <p className="fade-item fade-item-2 text-white">
-                    {item.text}
+                    {item.description}
                   </p>
                   <Link
                     href={`/shop-collection-list`}
-                    className="fade-item fade-item-3 tf-btn btn-light-icon animate-hover-btn btn-xl radius-3"
+                    className="fade-item fade-item-3  btn-light-icon animate-hover-btn btn-xl radius-3"
                   >
                     <span>Shop collection</span>
                     <i className="icon icon-arrow-right" />
